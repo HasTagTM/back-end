@@ -1,0 +1,40 @@
+package it.epicode.be;
+
+
+
+public class Helloworld {
+
+public static void main (String[] args)
+		{
+		
+		System.out.println("This is my first Epicode Java Project!");
+		};
+
+
+
+	public static int moltiplica(int x , int y) {
+
+		int res = x * y;
+		return res;
+	};
+	
+	public static void stampaRes(int x , int y) {
+		int res = x * y;
+		System.out.println(res);
+	
+		
+	};
+	
+	public static String concatena(String x ,  int y) {
+		String res = x.concat(y);
+		return res;
+	
+	}
+	
+	public static String[] inserisciInArray(String[] x , String j) {
+		
+	}
+	
+	
+}
+

@@ -1,0 +1,32 @@
+package it.epicode.be;
+
+import java.util.Scanner;
+
+public class Helloworld {
+
+public static void main (String[] args)
+		{
+		
+		System.out.println("This is my first Epicode Java Project!");
+		};
+
+	Scanner sc = new Scanner(System.in);
+
+	public static int moltiplica(int x , int y) {
+		char[] pippo;
+		System.out.println(pippo);
+		int res = x * y;
+		return res;
+	};
+	
+	public static int stampaRes(int x , int y) {
+		char[] pippo;
+		System.out.println(pippo);
+		int res = x * y;
+		System.out.println(res);
+		
+	}
+	
+}
+
+
