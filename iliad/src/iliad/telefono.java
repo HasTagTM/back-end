@@ -9,6 +9,7 @@ public class telefono {
 		SIM sim = new SIM("25841235874" , 0.0 , ultimeChiamate);
 		
 		sim.stampaDatiSim();
+		
 	}
 
 }
