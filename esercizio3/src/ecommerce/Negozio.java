@@ -1,10 +1,10 @@
-package comm.epico;
+package ecommerce;
 
-public class Main_Project {
+public class Negozio {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 }
