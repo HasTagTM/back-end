@@ -2,25 +2,26 @@ package esercizioG4;
 
 public class Dipendente {
 	
-	private static int matricola;
-	private static double stipendio;
-	private static double importoOrarioStraordinario;
-	private static Livello level;
-	private static Dipartimento department;
+	private static double stipendioBase = 1000;
+	private  int matricola;
+	private  double stipendio;
+	private  double importoOrarioStraordinario;
+	private  Livello level;
+	private  Dipartimento department;
 	
 	
 	
 	public Dipendente(int matricola , Dipartimento department) {
 		this.matricola = matricola;
 		this.department = department;
-		this.stipendio = 1000.0;
+		this.stipendio = stipendioBase;
 		this.importoOrarioStraordinario = 30;
 		this.level = Livello.OPERAIO;
 	}
 	
 	public Dipendente(int matricola ,double stipendio, double importoOrarioStraordinario, Livello level, Dipartimento department) {
 		this.matricola = matricola;
-		this.stipendio = stipendio;
+		this.stipendio = stipendioBase;
 		this.importoOrarioStraordinario = importoOrarioStraordinario;
 		this.level = level;
 		this.department = department;
@@ -51,7 +52,7 @@ public class Dipendente {
 	
 
 	
-	static public void stampaDatiDipendente() {
+	 public void stampaDatiDipendente() {
 		System.out.println("matricola " + matricola);
 		System.out.println("stipendio " + stipendio);
 		System.out.println("importo orario straordinario " + importoOrarioStraordinario);
@@ -59,28 +60,29 @@ public class Dipendente {
 		System.out.println("dipartimento " + department);
 	}
 	
-	static Livello promuovi() {
+	public Livello promuovi() {
 		
-		if(level == Livello.OPERAIO) {
-			stipendio *= 1.2;
-			return Livello.IMPIEGATO;
-				
+		if(this.level == Livello.OPERAIO) {
+			this.level = Livello.IMPIEGATO;
+				this.stipendio *= 1.2;
 		}else if(level == Livello.IMPIEGATO) {
-			stipendio *= 1.5;
-			return Livello.QUADRO;
-		}else if(Dipendente.level == Livello.QUADRO) {
-			stipendio *= 2;
-			return Livello.DIRIGENTE;
-		}
+			this.stipendio *= 1.5;
+			this.level = Livello.QUADRO;
+		}else if(this.level == Livello.DIRIGENTE) {
+			this.stipendio *= 2;
+			this.level = Livello.DIRIGENTE;
+		}else {
 		System.out.println("errore: impossibile promuovere il dipendente con livello DIRIGENTE.");
-		return level;
+		
+		}
+		return this.level;
 	}
 	
 	public static double calcolaPaga(Dipendente dipendente) {
-		return dipendente.getStipendio();
+		return dipendente.stipendio;
 	}
 	public static double calcolaPagaConStraordinario(Dipendente dipendente,int OreStraordinario) {
-		return dipendente.getStipendio() + (dipendente.getImportoOrarioStraordinario() * OreStraordinario);
+		return dipendente.stipendio + (dipendente.importoOrarioStraordinario * OreStraordinario);
 	}
 	
 	
