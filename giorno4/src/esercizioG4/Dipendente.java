@@ -85,7 +85,6 @@ public class Dipendente {
 		return dipendente.stipendio + (dipendente.importoOrarioStraordinario * OreStraordinario);
 	}
 	
-	
 
-
+	syso
 }
