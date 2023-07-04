@@ -34,23 +34,29 @@ public class MainArrayCinqueRandom {
 	
 	public static void cambiaValoreArray(int[] arr) {
 		Scanner sc = new Scanner(System.in);
+		//ciclo fino a quando l'utente inserisce 0
 		while(true) {
 			System.out.print("inserisci un nuovo valore da 1 a 10 oppure 0 per uscire");
 			try {
 			int val = Integer.parseInt(sc.nextLine());
 			if(val == 0) {
+				// se il valore inserito e diverso da quello accettato sollevo un'eccezione
 				return;  // blocco tutto se l'utente vuole uscire
 			}else if(val > 10) {
-				//try {
+				// try {
 					throw new MyNumberException("devi inserire un numero compreso tra 1 e 10");  //devo anche poi definire un catch
-				//}catch(MyNumberException e) {
-					//log.error(e.getMessage());	   //stampo il messaggio di errore se cade nel catch			}
+				// }catch(MyNumberException e) {
+					// log.error(e.getMessage());	   //stampo il messaggio di errore se cade nel catch			}
 			}
 			System.out.print("inserisci una posizione da 0 a 4");
 			int posiz = Integer.parseInt(sc.nextLine());
-			//try {
-				//arr[posiz] = val;   //inserisco il nuovo valore nella posizione scelto dall'utente
-				  //stampo l'array nuovo
+			
+			// controllo che l'indice dell'array scelto sia correto (si basi sulla lunghezza dell'array da 0 a 4
+			// try {
+				// arr[posiz] = val;   //inserisco il nuovo valore nella posizione scelto dall'utente
+				  // stampo l'array nuovo
+			
+			// catch multipli per la gestione di tutte le eccezione che possono essere sollevate durante l'esecuzione del codice
 			}catch(ArrayIndexOutOfBoundsException e) {
 				log.error(e.getMessage() + "valore non valido! inserire valore valido");
 			}catch (NumberFormatException e) {
