@@ -21,7 +21,7 @@ public class CatalogoBibliotecario {
 	private List<BaseLetteraria> catalogo;
  
     public CatalogoBibliotecario() {
-        catalogo = new ArrayList<>();
+        catalogo = new ArrayList<BaseLetteraria>();
     }
 
 
