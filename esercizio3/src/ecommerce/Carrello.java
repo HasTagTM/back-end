@@ -7,7 +7,7 @@ public class Carrello {
 	private List<Articolo> articoli;
 	
 	public Carrello() {
-		this.articoli = new ArrayList<>()
+		this.articoli = new ArrayList<>();
 	}
 	
 	public void aggiungiArticolo(Articolo articolo) {

@@ -70,9 +70,9 @@ public class MainProject {
 	//Esercizio #2
 	//Ottenere una lista di ordini con prodotti che appartengono alla categoria <Baby»>
 
-	public static List<Order> listaOrdini(List<Order> listaBaby){
-		return listaBaby.stream().filter(p -> p.getProducts().stream().filter(p -> p.getCategory()).equalsIgnoreCase("baby").collect(Collectors.toList());
-	}
+	//public static List<Order> listaOrdini(List<Order> listaBaby){
+	//	return listaBaby.stream().filter(p -> p.getProducts().stream().filter(p -> p.getCategory()).equalsIgnoreCase("baby").collect(Collectors.toList());
+	//}
 	
 	//Esercizio #4
 	//Ottenere una lista di prodotti ordinati da clienti di livello (tier) 2 tra l'01-Feb-2021 e l'01-Apr-2021
