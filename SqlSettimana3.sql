@@ -57,10 +57,9 @@ INSERT INTO Fornitori (denominazione, regioneResidenza) VALUES ('Sicaf&Trasporti
 INSERT INTO Fornitori (denominazione, regioneResidenza) VALUES ('Codeluppi&Trasporti' , 'Piemonte');
 INSERT INTO Fornitori (denominazione, regioneResidenza) VALUES ('D&M Trasporti internazionali' , 'Emilia Romagna');
 
-SELECT * FROM Clienti WHERE EXTRACT (YEAR FROM dataDiNascita) = 1982;
-
+SELECT nome, cognome FROM Clienti WHERE EXTRACT (YEAR FROM dataDiNascita) = 1982;
 SELECT * FROM Fatture WHERE importoIva = 20;
-SELECT * FROM Prodotti WHERE EXTRACT (YEAR FROM dataAttivazione) = 2017 AND inProduzione = true AND inCommercio = true;
+SELECT * FROM Prodotti WHERE EXTRACT (YEAR FROM dataAttivazione) = 2017 AND (inProduzione = true OR inCommercio = true);
 
 
 
