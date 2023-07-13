@@ -6,9 +6,11 @@ import javax.persistence.Persistence;
 
 public class MainProject {
 
+	static EntityManagerFactory  emf = Persistence.createEntityManagerFactory("Lezione_12");
+	static EntityManager em = emf.createEntityManager();
+	
 	public static void main(String[] args) {
-		EntityManagerFactory  emf = Persistence.createEntityManagerFactory("Lezione_12");
-		EntityManager em = emf.createEntityManager();
+		
 	}
 
 }
