@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicBorders"/>
     <fullyQualifiedTypeName name="java.util.logging.Logger"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.epicode.dao.LocationDAO"/>
     <fullyQualifiedTypeName name="com.epicode.dao.PersonaDAO"/>
     <fullyQualifiedTypeName name="com.epicode.dao.EventoDao.EventoDAO"/>
+    <fullyQualifiedTypeName name="com.epicode.dao.EventoDAO"/>
 </qualifiedTypeNameHistroy>
