@@ -12,7 +12,6 @@
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
 			<item value="org.eclipse.oomph.importWizards"/>
-			<item value="org.eclipse.mylyn.tasks.ui.wizards.import.category"/>
 		</list>
 	</section>
 </section>

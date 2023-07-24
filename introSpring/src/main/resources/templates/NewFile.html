@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Godfather's Pizza - Menu</title>
+</head>
+<body>
+    <h1>Godfather's Pizza - Menu</h1>
+    <table>
+        <tr>
+            <th>Pizza</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr th:each="pizza : ${pizzas}">
+            <td th:text="${pizza.name}"></td>
+            <td th:text="${pizza.description}"></td>
+            <td th:text="${pizza.price}"></td>
+        </tr>
+    </table>
+</body>
+</html>
