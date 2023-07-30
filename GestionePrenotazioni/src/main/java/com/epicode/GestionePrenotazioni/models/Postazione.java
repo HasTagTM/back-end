@@ -3,6 +3,8 @@ package com.epicode.GestionePrenotazioni.models;
 import com.epicode.GestionePrenotazioni.enumerated.TipoPostazione;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -23,6 +25,8 @@ public class Postazione {
 	
 	private String codiceUnivoco;
 	private String descrizione;
+	
+	@Enumerated(EnumType.STRING)
 	private TipoPostazione tipo;
 	private int numeroMassimoOccupanti;
 	

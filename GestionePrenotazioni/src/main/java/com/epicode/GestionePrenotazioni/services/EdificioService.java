@@ -1,5 +1,7 @@
 package com.epicode.GestionePrenotazioni.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,25 +16,37 @@ public class EdificioService {
 	@Autowired @Qualifier("crea_edificio") private ObjectProvider<Edificio> edificioProvider;
 	@Autowired IEdificioRepository edificioRepo;
 	
-	public void creaEdificio() {
-		edificioProvider.getObject().getNome();
-		edificioProvider.getObject().getIndirizzo();
-		edificioProvider.getObject().getCity();
+	public Edificio creaEdificio(String nome, String indirizzo, String city) {
+		Edificio edificio = edificioProvider.getObject();
+		edificio.setNome(nome);
+		edificio.setIndirizzo(indirizzo);
+		edificio.setCity(city);
+		edificioRepo.save(edificio);
+		System.out.println("EDIFICIO " + edificio.getNome() + " " + edificio.getIndirizzo() + " INDIRIZZO: " + edificio.getIndirizzo() + " CITTA': " + edificio.getCity() +  " creato EDIFICIO con successo");
+		return edificio;
 	}
 	
-	public void findAll() {
-		edificioRepo.findAll().forEach(e -> System.out.println(e));
+	public List<Edificio> findAll() {
+		return (List<Edificio>) edificioRepo.findAll();
 	}
 	
-	public Edificio findPostazioneById(Long id) {
-		return edificioRepo.findById(id).get();
+	public String findPostazioneById(Long id) {
+		return edificioRepo.findById(id).get().getNome().toString();
 	}
 	
-	public void updatePostazione(Edificio e) {
+	public void updateEdificio(Edificio e) {
 		edificioRepo.save(e);
+		System.out.println("edificio aggiornato");
+	}
+
+	public void deleteById(Long id) {
+		edificioRepo.deleteById(id);
+		System.out.println("edificio eleiminato");
+	}
+
+	public void deleteAll() {
+		edificioRepo.deleteAll();
+		System.out.println("edifici eleiminati");
 	}
 	
-	public void removePostazione(Edificio e) {
-		edificioRepo.save(e);
-	}
 }

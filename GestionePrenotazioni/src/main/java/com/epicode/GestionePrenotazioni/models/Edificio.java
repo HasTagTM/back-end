@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-
 public class Edificio {
 
 	
@@ -23,5 +22,12 @@ public class Edificio {
 	private String nome;
 	private String indirizzo;
 	private String city;
+	
+	public Edificio(String nome, String indirizzo, String city) {
+		super();
+		this.nome = nome;
+		this.indirizzo = indirizzo;
+		this.city = city;
+	}
 	
 }
