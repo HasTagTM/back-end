@@ -26,8 +26,6 @@ public class UtenteService {
 		return utente;
 	}
 	
-	
-	
 	public List<Utente> findAll() {
 		return (List<Utente>) utenteRepo.findAll();
 	}
@@ -57,6 +55,4 @@ public class UtenteService {
 		System.out.println("utenti eleiminati");
 	}
 	
-	
-
 }
