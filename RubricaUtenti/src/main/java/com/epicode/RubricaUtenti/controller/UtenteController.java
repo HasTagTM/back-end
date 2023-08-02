@@ -8,8 +8,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class UtenteController {
 
-	@GetMapping("/")
+		
+	@GetMapping("/rubrica")
 	public ModelAndView getHomePage(
+			
 			@PathVariable String nome,
 			@PathVariable String cognome,
 			@PathVariable Integer age,
