@@ -39,9 +39,9 @@ public class AuthRunner implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("Run...");
 		// Da lanciare solo la prima volta
-		 setRoleDefault();
+		 //setRoleDefault();
 
-		//dipendenteSvc.creaDipDefault("Hassan","programmazione", new Date(2023,07,06) , "responsabile");
+		dipendenteSvc.creaDipDefault("Hassan","programmazione", new Date(2023,07,06) , "responsabile");
 	}
 	
 
