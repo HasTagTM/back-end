@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="com.epicode.DeviceManagement.security.service.GestioneDispositivi"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="com.epicode.DeviceManagement.security.repository.IDispositivoRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Modifying"/>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
-    <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
     <fullyQualifiedTypeName name="com.epicode.GestioneDispositivi.enuerated.StatoDispositivo"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="com.epicode.DeviceManagement.security.repository.IDipendenteRepository"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="com.epicode.DeviceManagement_1.security.security.JwtAuthenticationEntryPoint"/>
     <fullyQualifiedTypeName name="com.epicode.DeviceManagement_1.security.security.JwtAuthenticationFilter"/>
     <fullyQualifiedTypeName name="com.epicode.DeviceManagement_1.enumerated.StatoDispositivo"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.AttributeConverter"/>
+    <fullyQualifiedTypeName name="lombok.Value"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Convert"/>
+    <fullyQualifiedTypeName name="com.epicode.spring_8.security.configuration.CodiceSegretoConverter"/>
+    <fullyQualifiedTypeName name="com.epicode.spring_8.security.configuration.CreditCardConverter"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>
