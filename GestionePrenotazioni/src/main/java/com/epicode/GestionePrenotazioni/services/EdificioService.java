@@ -41,12 +41,12 @@ public class EdificioService {
 
 	public void deleteById(Long id) {
 		edificioRepo.deleteById(id);
-		System.out.println("edificio eleiminato");
+		System.out.println("edificio eliminato");
 	}
 
 	public void deleteAll() {
 		edificioRepo.deleteAll();
-		System.out.println("edifici eleiminati");
+		System.out.println("edifici eliminati");
 	}
 	
 }
